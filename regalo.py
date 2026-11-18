@@ -36,7 +36,7 @@ if st.session_state.get("coordenadas_ok", False):
         enviar_fecha = st.form_submit_button("Comprobar fecha")
 
     if enviar_fecha:
-        if fecha == "21/11/2026" or fecha == "21-11-2026" or fecha == "21-11":
+        if fecha == "21/11/2026" or fecha == "21-11-2026" or fecha == "21-11" or fecha == "21/11":
             st.session_state["fecha_ok"] = True
         else:
             st.session_state["fecha_ok"] = False
